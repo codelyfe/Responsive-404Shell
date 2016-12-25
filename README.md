@@ -70,6 +70,7 @@ $starttime = $mtime[1] + $mtime[0];
 | Port Scan     | X             |
 | Remove Self   | X             |
 | QR CODE LOGIN | X             |
+|  Current Mem  | X             |
 
 ## Mobile Friendly 
 

