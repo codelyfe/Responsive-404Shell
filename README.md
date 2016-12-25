@@ -1,6 +1,7 @@
 ## Responsive 404 Shell ( Redesign by Codelyfe )
 
 ![alt text](https://html5hive.org/wp-content/uploads/2015/11/bootstrap-logo.jpg "BOOTSTRAP")
+![alt text](http://getbootstrap.com/2.3.2/assets/img/bs-docs-responsive-illustrations.png "Responsive Web Design")
 
 
 ## Original git ( https://github.com/KyleBoyer/404Shell )
