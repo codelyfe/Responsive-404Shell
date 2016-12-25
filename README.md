@@ -67,6 +67,7 @@ $starttime = $mtime[1] + $mtime[0];
 | String Tools  | X             |
 | Port Scan     | X             |
 | Remove Self   | X             |
+| QR CODE LOGIN | X             |
 
 ## Mobile Friendly 
 
