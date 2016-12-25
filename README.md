@@ -58,13 +58,13 @@ $starttime = $mtime[1] + $mtime[0];
 
 ## How to Install
 
---Download to device
-----Unzip
--------Upload to server
-----------Direct URL to http://www.YOURDOMAIN.com/404sx.php
--------------Press "Tab" to find "Password" input
----------------Login in using default password "pw"
---------------------Change Password in "Shell Settings"
----------------------- Have a blast using this shell. 
+1. Download to device
+2. Unzip
+3. Upload to server
+4. Direct URL to http://www.YOURDOMAIN.com/404sx.php
+5. Press "Tab" to find "Password" input
+6. Login in using default password "pw"
+7. Change Password in "Shell Settings"
+8. Have a blast using this shell. 
 
 
