@@ -1271,12 +1271,12 @@ makehide('dir', $nowpath);
 	p('</div></div>');
 	
 	p('<div class="panel panel-default"><div class="panel-body">');
-    p('<input name="chkall" value="on" type="checkbox" onclick="$(\'ckallbx\').click();" /><a href="javascript:g(\'file\',\'' . $nowpath . '\',\'s_filename_'.($sort[1]?0:1).'\',null,null,null,null, null,\'' . $nowpath . '\', \'' . htmlentities($findstr) . '\',\'' . $findin . '\', \'' . ($re ? '1' : '0') . '\', \'' . htmlentities($writabledb) . '\', \'' . ($subdirs ? '1' : '0') . '\');">&nbsp; <span class="label label-default">File Name</span></a> '.($p1 == 's_filename_0' ? $uchar : '').($p1 == 's_filename_1' || !$p1 ? $dchar : '').'');
+    p('<input name="chkall" value="on" type="checkbox" onclick="$(\'ckallbx\').click();" /><a href="javascript:g(\'file\',\'' . $nowpath . '\',\'s_filename_'.($sort[1]?0:1).'\',null,null,null,null, null,\'' . $nowpath . '\', \'' . htmlentities($findstr) . '\',\'' . $findin . '\', \'' . ($re ? '1' : '0') . '\', \'' . htmlentities($writabledb) . '\', \'' . ($subdirs ? '1' : '0') . '\');">  <span class="label label-default">File Name</span></a> '.($p1 == 's_filename_0' ? $uchar : '').($p1 == 's_filename_1' || !$p1 ? $dchar : '').'');
 	p('
 	<a href="javascript:g(\'file\',\'' . $nowpath . '\',\'s_mtime_'.($sort[1]?0:1).'\',null,null,null,null,null,\'' . $nowpath . '\', \'' . htmlentities($findstr) . '\',\'' . $findin . '\', \'' . ($re ? '1' : '0') . '\', \'' . htmlentities($writabledb) . '\', \'' . ($subdirs ? '1' : '0') . '\');">
-	&nbsp; <span class="label label-default">Last Modified</span></a> '.($p1 == 's_mtime_0' ? $dchar : '').($p1 == 's_mtime_1' ? $uchar : '').'');
-	p('&nbsp; <a href="javascript:g(\'file\',\'' . $nowpath . '\',\'s_size_'.($sort[1]?0:1).'\',null,null,null,null,null,\'' . $nowpath . '\', \'' . htmlentities($findstr) . '\',\'' . $findin . '\', \'' . ($re ? '1' : '0') . '\', \'' . htmlentities($writabledb) . '\', \'' . ($subdirs ? '1' : '0') . '\');"><span class="label label-default">Size</span></a> '.($p1 == 's_size_0' ? $uchar : '').($p1 == 's_size_1' ? $dchar : '').'</td>');
-    p('&nbsp; <span class="label label-default">Chmod / Perms</span>&nbsp; <span class="label label-default">Action</span>');
+	  <span class="label label-default">Last Modified</span></a> '.($p1 == 's_mtime_0' ? $dchar : '').($p1 == 's_mtime_1' ? $uchar : '').'');
+	p('  <a href="javascript:g(\'file\',\'' . $nowpath . '\',\'s_size_'.($sort[1]?0:1).'\',null,null,null,null,null,\'' . $nowpath . '\', \'' . htmlentities($findstr) . '\',\'' . $findin . '\', \'' . ($re ? '1' : '0') . '\', \'' . htmlentities($writabledb) . '\', \'' . ($subdirs ? '1' : '0') . '\');"><span class="label label-default">Size</span></a> '.($p1 == 's_size_0' ? $uchar : '').($p1 == 's_size_1' ? $dchar : '').'</td>');
+    p('  <span class="label label-default">Chmod / Perms</span>  <span class="label label-default">Action</span>');
     p('</div></div>');
 	
 	
@@ -1406,9 +1406,9 @@ makehide('dir', $nowpath);
 			  </div>
 			  <div class="panel-body">
 				<a href="javascript:opfile(\'newtime\',\'' . $dirdb['server_link'] . '\',\'' . $dirdb['dirlink'] . '\');">' . $dirdb['mtime'] . '</a>
-					<span>&nbsp;' . $attachsize . '</span>
-				<span>&nbsp;<a href="javascript:fileperm(\'' . str_replace("'", "\'", $dirdb['server_link']) . '\');">' . $dirdb['dirchmod'] . '</a> / <a href="javascript:fileperm(\'' . str_replace("'", "\'", $dirdb['server_link']) . '\');">' . $dirdb['dirperm'] . '</a>' . $dirdb['fileowner'] . '</span>
-				<span>&nbsp;
+					<span> ' . $attachsize . '</span>
+				<span> <a href="javascript:fileperm(\'' . str_replace("'", "\'", $dirdb['server_link']) . '\');">' . $dirdb['dirchmod'] . '</a> / <a href="javascript:fileperm(\'' . str_replace("'", "\'", $dirdb['server_link']) . '\');">' . $dirdb['dirperm'] . '</a>' . $dirdb['fileowner'] . '</span>
+				<span> 
 				<a href="javascript:rename(\'' . str_replace("'", "\'", $dirdb['server_link']) . '\');">
 						<span class="glyphicon glyphicon-text-color" aria-hidden="true"></span>
 						</a> | <a href="javascript:copyfolder(\'' . str_replace("'", "\'", $dirdb['server_link']) . '\');">
@@ -1453,8 +1453,8 @@ p('
 	</h3>
   </div>
 ');
-            p('<div class="panel-body"><a href="javascript:opfile(\'newtime\',\'' . str_replace("'", "\'", $filedb['server_link']) . '\',\'' . $filedb['dirlink'] . '\');">' . $filedb['mtime'] . '</a>&nbsp;&nbsp;|&nbsp;&nbsp;' . sizecount($filedb['size']) . '<a href="javascript:fileperm(\'' . str_replace("'", "\'", $filedb['server_link']) . '\');">&nbsp;&nbsp;' . $filedb['filechmod'] . '</a> / <a href="javascript:fileperm(\'' . str_replace("'", "\'", $filedb['server_link']) . '\');">' . $filedb['fileperm'] . '</a>' . $filedb['fileowner'] . '');
-			p('&nbsp;&nbsp;');
+            p('<div class="panel-body"><a href="javascript:opfile(\'newtime\',\'' . str_replace("'", "\'", $filedb['server_link']) . '\',\'' . $filedb['dirlink'] . '\');">' . $filedb['mtime'] . '</a>  |  ' . sizecount($filedb['size']) . '<a href="javascript:fileperm(\'' . str_replace("'", "\'", $filedb['server_link']) . '\');">  ' . $filedb['filechmod'] . '</a> / <a href="javascript:fileperm(\'' . str_replace("'", "\'", $filedb['server_link']) . '\');">' . $filedb['fileperm'] . '</a>' . $filedb['fileowner'] . '');
+			p('  ');
 			if(endsWith($filedb['filename'],".zip")){
                 p('<a href="javascript:unzipfile(\'' . str_replace("'", "\'", $filedb['server_link']) . '\');">Unzip</a> | ');
             }
@@ -1475,7 +1475,10 @@ p('
         }
     }
     }
-    p('<input id= "ckallbx" name="chkallbx" value="on" type="checkbox" onclick="CheckAll(this.form, this.checked)" /><a href="javascript:dofile(\'delfiles\');">&nbsp; <span class="label label-danger" style="font-size:9px;" ><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> DELETE</span></a> or <a href="javascript:dofile(\'zipfiles\');"><span class="label label-warning" style="font-size:9px;"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> ZIP</span></a>&nbsp;' . $dir_i . ' directories / ' . $file_i . ' files');
+	
+	p('<div class="panel panel-default"><div class="panel-body">');
+    p('<input id= "ckallbx" name="chkallbx" value="on" type="checkbox" onclick="CheckAll(this.form, this.checked)" /><a href="javascript:dofile(\'delfiles\');">  <span class="label label-danger" style="font-size:9px;" ><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> DELETE</span></a> or <a href="javascript:dofile(\'zipfiles\');"><span class="label label-warning" style="font-size:9px;"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> ZIP</span></a> ' . $dir_i . ' directories / ' . $file_i . ' files');
+	p('</div></div>');
 	p('</table></form>');
 
 
