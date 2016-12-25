@@ -1,5 +1,5 @@
 ## Responsive 404 Shell ( Redesign by Codelyfe )
-![alt text](http://sanitas.co.uk/wp-content/uploads/2013/12/pen-testing-symbol-182x195_182px_195px_cropped.png "Pentesting")
+
 
 ![alt text](https://html5hive.org/wp-content/uploads/2015/11/bootstrap-logo.jpg "BOOTSTRAP")
 ![alt text](http://getbootstrap.com/2.3.2/assets/img/bs-docs-responsive-illustrations.png "Responsive Web Design")
@@ -42,6 +42,8 @@ $mtime     = explode(' ', microtime());
 $starttime = $mtime[1] + $mtime[0];
 ?>
 ```
+
+![alt text](http://www.secureimmunity.co.uk/wp-content/uploads/2015/03/Ethical-Hacking-Logo-960x540-400x300.jpg "Pentesting")
 
 | Features      | Working       |
 | ------------- |:-------------:|
