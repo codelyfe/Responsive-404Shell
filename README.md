@@ -1,5 +1,28 @@
 ## Responsive 404 Shell ( Redesign by Codelyfe )
 
+| Features      | Working       |
+| ------------- |:-------------:|
+| File Manager  | X             |
+|Process Manager| X             |
+| MySQL Manager | X             |
+| MySQL Up & Dw | X             |
+| PHP Variable  | X             |
+|PHP Obfuscator | X             |
+| Eval PHP Code | X             |
+| Code Injector | X             |
+| Code Ejector  | X             |
+| Fuzz Server   | X             |
+| DDos          | X             |
+| Exec. Cmd     | X             |
+| Bind Port     | X             |
+| Back Connect  | X             |
+| Auto Root     | X             |
+| Security Info | X             |
+| Email         | X             |
+| String Tools  | X             |
+| Port Scan     | X             |
+| Remove Self   | X             |
+
 ## Mobile Friendly 
 
 ## Original git ( https://github.com/KyleBoyer/404Shell )
