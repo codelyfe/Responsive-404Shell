@@ -63,7 +63,7 @@ $starttime = $mtime[1] + $mtime[0];
 3. Upload to server
 4. Direct URL to http://www.YOURDOMAIN.com/404sx.php
 5. Press "Tab" to find "Password" input
-6. Login in using default password "pw"
+6. Login using default password "pw"
 7. Change Password in "Shell Settings"
 8. Have a blast using this shell. 
 
