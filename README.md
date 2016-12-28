@@ -1,5 +1,5 @@
 
-## Responsive 404 Shell ( ![alt text](http://picshare.pcriot.com/picshare/group/g33k/images/codelyfe.png "Codelyfe") )
+##  ![alt text](http://picshare.pcriot.com/picshare/group/g33k/images/codelyfe.png "Codelyfe") Responsive 404 Shell
 
 ![alt text](http://picshare.pcriot.com/picshare/group/g33k/images/2016-12-25_1555.png#.WGBAyMFHilo.link "404Shell")
 
